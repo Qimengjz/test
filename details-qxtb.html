@@ -12,61 +12,122 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 <link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/swiper.min.css" rel="stylesheet">
+<link href="css/select.css" rel="stylesheet">
+<link href="css/lCalendar.css" rel="stylesheet" type="text/css">
+<link href="css/items.css" rel="stylesheet" type="text/css">
 <link href="css/list.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/dyselect.js"></script>
+<script type="text/javascript" src="js/lCalendar.js"></script>
 <script type="text/javascript" src="js/base.js"></script>
 </head>
 <body>
 <div class="main">
   <div class="con flex-between top">
-    <div class="top-l"><a href="index.html"><img src="images/bar-ico1.png" width="42" height="42" alt=""/><span>缺陷填报</span></a></div>
-    <div class="top-r hide"><img src="images/top-r.png" width="182" height="60" alt=""/> </div>
+    <div class="top-l"><a href="index.html"><img src="images/bar-ico1.png" width="42" height="42" alt=""/><span>缺陷登记</span></a></div>
+    <div class="top-r"><img src="images/top-r.png" width="182" height="60" alt=""/> </div>
   </div>
-  <div class="qx-t shadow">
-      <p>缺陷填报</p>
-  </div>
-  <div class="qx-c shadow mt35">
-  	<ul>
-  		<li class="flex-between"><p>缺陷单主题</p><input type="text" /></li>
-  		<li class="flex-between"><p>缺 陷 类 型</p><select><option>请选择类型</option><option>填报缺陷异常</option></select></li>
-  		<li class="flex-between"><p>缺 陷 等 级</p><select><option>请选择缺陷等级</option><option>一级</option><option>二级</option><option>三级</option></select></li>
-  		<li class="flex-between"><p>所 属 机 组</p><select><option>请选择所属机组</option><option>#1机组</option><option>#2机组</option></select></li>
-  		<li class="flex-between"><p>缺 陷 描 述</p><input type="text"  /></li>
-  		<li class="flex-between"><p>上 传 图 片</p><img src="images/camera.png" width="40"></li>
-
-      <div class="flex-between">
-  		  <div class="photos">
-          <img class="pho" src="images/photo-bg.jpg" width="146" alt=""/>
-          <input class="js_upFile cover1 photos-btn" type="file" name="cover" accept="image/*" capture="camera" multiple />
+  <div class="qx-c shadow mt35 items">
+    <ul>
+      <li class="flex-between">
+        <p>缺陷单编号</p>
+        <div class="qx-cr">
+          <input class="inp1" type="text" />
         </div>
-  		  <div class="photos">
-          <img class="pho" src="images/photo-bg.jpg" width="146" alt=""/>
-          <input class="js_upFile cover1 photos-btn" type="file" name="cover" accept="image/*" capture="camera" multiple />
+      </li>
+      <li class="flex-between">
+        <p>缺 陷 来 源</p>
+        <div class="qx-cr"><span class="btn1">请选择</span></div>
+      </li>
+      <li class="flex-between">
+        <p>缺 陷 设 备</p>
+        <div class="qx-cr"><span class="btn2">请选择</span></div>
+      </li>
+      <li class="flex-between">
+        <p>缺 陷 位 置</p>
+        <div class="qx-cr">
+          <input type="text" />
         </div>
-  		  <div class="photos">
-          <img class="pho" src="images/photo-bg.jpg" width="146" alt=""/>
-          <input class="js_upFile cover1 photos-btn" type="file" name="cover" accept="image/*" capture="camera" multiple />
+      </li>
+      <li class="flex-between">
+        <p>缺 陷 描 述</p>
+        <div class="qx-cr">
+          <textarea></textarea>
         </div>
-      </div>
-
-  		<li class="flex-between"><p>拍 短 视 频</p><img src="images/video.png" width="40"></li>
-  		<img class="pho" src="images/photo.png" width="146">
-  	</ul>
-    
+      </li>
+      <li class="flex-between">
+        <p>上 传 图 片</p>
+        <div class="qx-cr">
+          <dl class="up-photo flex-between">
+            <dd>
+              <div class="photos"><img src="images/photo-bg.jpg" width="142" height="142"  alt=""/>
+                <input class="photos-btn" type="file" name="cover" accept="image/*" capture="camera" />
+              </div>
+            </dd>
+            <dd>
+              <div class="photos"><img src="images/photo-bg.jpg" width="142" height="142"  alt=""/>
+                <input class="photos-btn" type="file" name="cover" accept="image/*" capture="camera" />
+                </a></div>
+            </dd>
+            <dd>
+              <div class="photos"><img src="images/photo-bg.jpg" width="142" height="142"  alt=""/>
+                <input class="photos-btn" type="file" name="cover" accept="image/*" capture="camera" />
+                </a></div>
+            </dd>
+          </dl>
+        </div>
+      </li>
+      <li class="flex-between">
+        <p>拍 短 视 频</p>
+        <div class="qx-cr">
+          <dl class="up-photo flex-between">
+            <dd>
+              <div class="photos"><img src="images/photo-bg.jpg" width="142" height="142"  alt=""/>
+                <input class="photos-btn" type="file" name="cover" accept="video/*" capture="camcorder" />                
+              </div>
+            </dd>
+            <dd>
+              <div class="photos"><img src="images/photo-bg.jpg" width="142" height="142"  alt=""/>
+                <input class="photos-btn" type="file" name="cover" accept="video/*" capture="camcorder" />
+                </a></div>
+            </dd>
+            <dd>
+              <div class="photos"><img src="images/photo-bg.jpg" width="142" height="142"  alt=""/>
+                <input class="photos-btn" type="file" name="cover" accept="video/*" capture="camcorder" />
+              </div>
+            </dd>
+          </dl>
+        </div>
+      </li>
+      <li class="flex-between">
+        <p>发 现 时 间</p>
+        <div class="qx-cr">
+          <input class="inp2 date" type="text" name="input_date" data-lcalendar="2019-01-1,2020-12-31" />
+        </div>
+      </li>
+      <li class="flex-between">
+        <p>发现人班组</p>
+        <div class="qx-cr"><span class="btn3">请选择</span></div>
+      </li>
+      <li class="flex-between">
+        <p>发 &nbsp;&nbsp;现&nbsp;&nbsp; 人</p>
+        <div class="qx-cr">
+          <input type="text" />
+        </div>
+      </li>
+    </ul>
   </div>
   <div class="save">
-    <button class="bgc-orange" type="button">保 存</button>   
-    <button class="bgc-blue" type="button">返 回</button>  
+    <button class="bgc-orange" type="button">保 存</button>
+    <button class="bgc-blue" type="button">返 回</button>
   </div>
-  </div>
-<div class="btmbar hide">
-  <ul class="flex-row">
-<li> <a href="index.html" title=""> <img src="images/bar-ico1.png" width="42" height="42" alt=""/> <span>首页</span> </a> </li>
-    <li class="on"> <a href="list-qx.html" title=""> <img src="images/bar-ico2-on.png" width="42" height="42" alt=""/> <span>任务</span> </a> </li>
-    <li> <a href="message.html" title=""> <img src="images/bar-ico3.png" width="42" height="42" alt=""/> <span>消息</span> </a> </li>
-    <li> <a href="my.html" title=""> <img src="images/bar-ico4.png" width="42" height="42" alt=""/> <span>我的</span> </a> </li>
-  </ul>
 </div>
+<div class="select_box select_box1"></div>
+<div class="select_box select_box2"></div>
+<div class="select_box select_box3"></div>
+<script src="js/select4.js"></script> 
 <script type="text/javascript">
 $(function () {
     //拍照
@@ -82,8 +143,15 @@ $(function () {
     $('.gets').click(function () {      
       $(this).parent().siblings().find('.inps').val('58.3');    
     });
+    
+    //日历控件
+  var calendar = new lCalendar();
+  calendar.init({
+    'trigger': '.date',
+    'type': 'date'
+  });
+  
 })
 </script>
-
 </body>
 </html>

@@ -23,19 +23,19 @@
 <body>
 <div class="main">
   <div class="con flex-between top">
-    <div class="top-l"><a href="index.html"><img src="images/bar-ico1.png" width="42" height="42" alt=""/><span>缺陷审核</span></a></div>
+    <div class="top-l"><a href="index.html"><img src="images/bar-ico1.png" width="42" height="42" alt=""/><span>缺陷消除</span></a></div>
     <div class="top-r"><img src="images/top-r.png" width="182" height="60" alt=""/> </div>
   </div>
   <div class="tab con shadow hide">
     <ul class="flex-row">
       <li class="on"><a href="#" title=""><span>全部</span></a></li>
-      <li><a class="btn6" href="#" title=""><span>审核状态</span></a></li>
+      <li><a class="btn6" href="#" title=""><span>消缺状态</span></a></li>
       <li><a class="btn5" href="#" title=""><span>缺陷等级</span></a></li>
     </ul>
   </div>
   <div class="list">
     <ul class="mt35">
-      <li> <a href="details-qx.html" title="">
+      <li> <a href="details-qx2.html" title="">
         <div class="item-tit flex-between">
           <h2>给水泵轴承温度高</h2>
           <span><img src="images/ico-jt-more.png" width="22" height="36" alt=""/></span> </div>
@@ -55,14 +55,14 @@
               <p class="p2">给水泵</p>
             </dd>
             <dd class="flex-between">
-              <p class="p1">发 现 时 间</p>
+              <p class="p1">审 核 时 间</p>
               <p class="p2">2020-03-15 15:30</p>
             </dd>
           </dl>
-          <div class="item-r flex-column"> <span class="btns bgc-blue">未审核</span> </div>
+          <div class="item-r flex-column"> <span class="btns bgc-blue">未消缺</span> </div>
         </div>
       </li>
-      <li> <a href="details-qx.html" title="">
+      <li> <a href="details-qx2.html" title="">
         <div class="item-tit flex-between">
           <h2>凝结泵联轴器松动</h2>
           <span><img src="images/ico-jt-more.png" width="22" height="36" alt=""/></span> </div>
@@ -86,14 +86,14 @@
               <p class="p2">严重</p>
             </dd>
             <dd class="flex-between">
-              <p class="p1">审 核 时 间</p>
+              <p class="p1">消 缺 时 间</p>
               <p class="p2">2020-03-154 15:30</p>
             </dd>
           </dl>
-          <div class="item-r flex-column"> <span class="btns bgc-green">已审核</span> </div>
+          <div class="item-r flex-column"> <span class="btns bgc-green">已消缺</span> </div>
         </div>
       </li>
-      <li> <a href="details-qx.html" title="">
+      <li> <a href="details-qx2.html" title="">
         <div class="item-tit flex-between">
           <h2>给水泵轴承温度高</h2>
           <span><img src="images/ico-jt-more.png" width="22" height="36" alt=""/></span> </div>
@@ -117,7 +117,7 @@
               <p class="p2">2020-03-13 15:30</p>
             </dd>
           </dl>
-          <div class="item-r flex-column"> <span class="btns bgc-orange">未通过</span> </div>
+          <div class="item-r flex-column"> <span class="btns bgc-blue">未消缺</span> </div>
         </div>
       </li>
     </ul>
@@ -147,16 +147,32 @@
       </div>
     </li>
     <li class="flex-between">
-      <div class="tc-l">审 核</div>
+      <div class="tc-l">审 核 人</div>
+      <div class="tc-r">
+        <input type="text">
+      </div>
+    </li>
+    <li class="flex-between">
+      <div class="tc-l">审核状态</div>
       <div class="tc-r">
         <select>
-          <option value ="审核未通过">审核未通过</option>
-          <option value ="审核通过">审核通过</option>
+          <option value ="已审核未通过">已审核未通过</option>
+          <option value ="已审核通过">已审核通过</option>
+          <option value ="已提交未审核">已提交未审核</option>
         </select>
       </div>
     </li>
     <li class="flex-between">
-      <div class="tc-l">审 核 人</div>
+      <div class="tc-l">消缺</div>
+      <div class="tc-r">
+        <select>
+          <option value ="未消缺">未消缺</option>
+          <option value ="已消缺">已消缺</option>
+        </select>
+      </div>
+    </li>
+    <li class="flex-between">
+      <div class="tc-l">消 缺 人</div>
       <div class="tc-r">
         <input type="text">
       </div>

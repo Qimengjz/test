@@ -3,9 +3,8 @@
 .items { margin-bottom: .35rem; padding: 0 .35rem; background: #fff; box-shadow: 0 0 .1rem #ccc; font-size: 0.24rem; color: #333 }
 .items-tit { height: 1rem; line-height: 1rem; border-bottom: .02rem solid #ddd }
 .items-tit h2 { padding-left: .5rem; background: url(../images/ico-item.png) no-repeat left center; background-size: auto 28%; font-size: 0.28rem; font-weight: normal }
-.items-tit span { }
-.items ul { }
-.items li { padding: .3rem 0; border-bottom: .02rem solid #ddd; line-height: .36rem; }
+.items li { padding: .3rem 0; border-bottom: .02rem solid #ddd; line-height: .36rem; font-size:.26rem }
+.items li li{font-size:.24rem}
 .items li .items-l { width: 67%; }
 .items li .items-r { width: 30%; text-align: right }
 .items li.type1 span { display: block; height: .36rem; padding-right: .55rem; background: url(../images/ico-jt-select.png) no-repeat right center; background-size: auto 60%; color: #00cc00; font-weight: bold }
@@ -38,3 +37,14 @@
 .white_content6 {display: none;position:fixed;top:50%;left:50%;margin-top: -2.4rem;margin-left: -3.4rem;padding: .5rem 0;width: 6.8rem;font-size: .2rem;border-radius: .2rem;text-align: center;background-color: white;z-index:1002;overflow: auto;}
 .white_content6 p{margin: .5rem 0 1rem;font-size: .32rem;color: #333;text-align: center;}
 .white_content6 button{margin: 0 .5rem;padding: 0 .2rem;width: 2rem;height: .68rem;line-height: .68rem;color: #fff;font-size: .36rem;border:none;border-radius: .5rem;}
+.items li .btn-more { display: block; height: .36rem; padding-right: .55rem; background: url(../images/ico-jt-select.png) no-repeat right center; background-size: auto 60%;font-weight: bold }
+
+.items li.normal .btn-more{ color: #00cc00; }
+.items li.unnormal .btn-more{ color: #f0453d; }
+.items li.on .items-l{ font-weight:bold}
+.items li.on li .items-l{ font-weight: normal}
+.items li ul{ display:none; padding:0 .3rem; margin-top:.1rem; background:#eef1fd}
+.items li.on li.type1 span{ background:none; padding-right:0}
+.items li.on li.type2 .items-r .gets{ display:none}
+.up-photo.flex-row{-webkit-justify-content: flex-start; justify-content: flex-start;}
+

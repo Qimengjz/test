@@ -4,18 +4,11 @@ $(function() {
     $("html").css({'font-size':100/750*$(window).width()+'px'});
   });
   
-  $('.tab li').click(function () {		
+  $('.tab li,.nav li').click(function () {		
 		$(this).addClass("on");
+    $(this).siblings("li").removeClass("on");	
 	});
-  $('.tab li').eq(0).click(function () {		
-		$(this).siblings("li").removeClass("on");		
-	});
-  $('.tab li').eq(1).click(function () {		
-		$('.tab li').eq(0).removeClass("on");		
-	});
-  $('.tab li').eq(2).click(function () {		
-		$('.tab li').eq(0).removeClass("on");		
-	});
+  
 $(".show").click(function(){
   $(".alertBox").show();
 });
@@ -27,6 +20,6 @@ $(".close").click(function(){
   $(".alertBox2").hide();
 });
 
-});
+})
 
 

@@ -199,5 +199,32 @@ $(function() {
     $('.btn8').on('click',
     function() {
         hgS8.openSelectSwiper();
-    });   
-});
+    }); 
+    var hgS9 = new selectSwiper({
+        el: '.select_box9',
+        mustSelect: true,
+        data: ['仪表检查巡线','每天锅炉巡线','每天电压巡线', '每周汽机巡线'],
+        init: function(index) {
+            if (index !== -1) {
+                $('.btn9').html(this.data[index]);
+            }
+        },
+        okFunUndefind: function() {
+            alert('必须选择一项');
+            return false;
+        },
+        okFun: function(index) {
+            console.log(index);
+            $('.btn9').html(this.data[index]);
+        },
+        closeFun: function() {
+            console.log('取消');
+        },
+    });
+    $('.btn9').on('click',
+    function() {
+        hgS9.openSelectSwiper();
+    }); 
+    
+      
+})

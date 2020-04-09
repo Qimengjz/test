@@ -24,14 +24,14 @@
 <div class="main">
   <div class="con flex-between top">
     <div class="top-l"><a href="index.html"><img src="images/bar-ico1.png" width="42" height="42" alt=""/><span>工单管理</span></a></div>
-    <div class="top-r hide"><img src="images/top-r.png" width="182" height="60" alt=""/> </div>
+    <div class="top-r"><img src="images/top-r.png" width="182" height="60" alt=""/> </div>
   </div>
   <div class="con shadow nav">
     <ul class="flex-between">
-      <li class="on"><a href="#" title="">工单列表</a></li>
-      <li><a href="#" title="">待受理工单</a></li>
-      <li><a href="#" title="">待审核工单</a></li>
-      <li><a href="#" title="">待上报工单</a></li>
+      <li class="on"><a href="#" title="">全部</a></li>
+      <li><a href="list-gd.html" title="">待审批</a></li>
+      <li><a href="list-gd.html" title="">待执行</a></li>
+      <li><a href="list-gd.html" title="">待验收</a></li>
     </ul>
   </div>
   <div class="tab con shadow hide">
@@ -42,13 +42,39 @@
     </ul>
   </div>
   <div class="list">
-    <ul class="mt35">
-      <li>
-        <a href="details-gd.html" title="">
+    <ul>
+      <li> <a href="details-gd1.html" title="">
+        <div class="item-tit flex-between">
+          <h2>2#凝结泵联轴器松动</h2>
+          <span><img src="images/ico-jt-more.png" width="22" height="36" alt=""/></span> </div>
+        </a>
+        <div class="item-con flex-between">
+          <dl class="item-l">
+            <dd class="flex-between">
+              <p class="p1">工单编号</p>
+              <p class="p2">HZCS190811002</p>
+            </dd>
+            <dd class="flex-between">
+              <p class="p1">工单类型</p>
+              <p class="p2">计划检修</p>
+            </dd>
+            <dd class="flex-between">
+              <p class="p1">检修班组</p>
+              <p class="p2">电气一班</p>
+            </dd>
+            <dd class="flex-between">
+              <p class="p1">创建时间</p>
+              <p class="p2">2020-03-15 16:52:36</p>
+            </dd>
+          </dl>
+          <div class="item-r flex-column"> <span class="btns bgc-blue">待审批</span> </div>
+        </div>
+      </li>
+      <li> <a href="details-gd2.html" title="">
         <div class="item-tit flex-between">
           <h2>#1给水泵轴承温度温度高</h2>
-          <span><img src="images/ico-jt-more.png" width="22" height="36" alt=""/></span>
-        </div></a>
+          <span><img src="images/ico-jt-more.png" width="22" height="36" alt=""/></span> </div>
+        </a>
         <div class="item-con flex-between">
           <dl class="item-l">
             <dd class="flex-between">
@@ -57,121 +83,91 @@
             </dd>
             <dd class="flex-between">
               <p class="p1">工单类型</p>
-              <p class="p2">缺陷填报工单</p>
+              <p class="p2">计划检修</p>
             </dd>
             <dd class="flex-between">
-              <p class="p1">所属机组</p>
-              <p class="p2">#1机组</p>
+              <p class="p1">检修班组</p>
+              <p class="p2">锅炉一班</p>
             </dd>
             <dd class="flex-between">
-              <p class="p1">创建时间</p>
-              <p class="p2">2020-03-17 16:52:36</p>
+              <p class="p1">审批时间</p>
+              <p class="p2">2020-03-16 16:52:36</p>
             </dd>
           </dl>
-          <div class="item-r flex-column"> <span class="btns bgc-orange">待受理</span> </div>
+          <div class="item-r flex-column"> <span class="btns bgc-orange">待执行</span> </div>
         </div>
-        
       </li>
-      <li>
-        <a href="details-gd.html" title="">
+      <li> <a href="details-gd3.html" title="">
         <div class="item-tit flex-between">
           <h2>#1给水泵密封漏水</h2>
-          <span><img src="images/ico-jt-more.png" width="22" height="36" alt=""/></span>
-        </div></a>
+          <span><img src="images/ico-jt-more.png" width="22" height="36" alt=""/></span> </div>
+        </a>
         <div class="item-con flex-between">
           <dl class="item-l">
             <dd class="flex-between">
               <p class="p1">工单编号</p>
-              <p class="p2">HZCS190811005</p>
+              <p class="p2">HZCS190811002</p>
             </dd>
             <dd class="flex-between">
               <p class="p1">工单类型</p>
-              <p class="p2">巡检异常工单</p>
+              <p class="p2">临时检修</p>
             </dd>
             <dd class="flex-between">
-              <p class="p1">所属机组</p>
-              <p class="p2">#1机组</p>
+              <p class="p1">检修班组</p>
+              <p class="p2">检修一班</p>
             </dd>
             <dd class="flex-between">
-              <p class="p1">创建时间</p>
-              <p class="p2">2020-03-17 16:52:36</p>
+              <p class="p1">执行时间</p>
+              <p class="p2">2020-03-17 18:52:36</p>
             </dd>
           </dl>
-          <div class="item-r flex-column"> <span class="btns bgc-green">待审核</span> </div>
+          <div class="item-r flex-column"> <span class="btns bgc-green">待验收</span> </div>
         </div>
-        
-      </li>
-      <li>
-        <a href="details-gd.html" title="">
-        <div class="item-tit flex-between">
-          <h2>2#凝结泵联轴器松动</h2>
-          <span><img src="images/ico-jt-more.png" width="22" height="36" alt=""/></span>
-        </div></a>
-        <div class="item-con flex-between">
-          <dl class="item-l">
-            <dd class="flex-between">
-              <p class="p1">工单编号</p>
-              <p class="p2">HZCS190811006</p>
-            </dd>
-            <dd class="flex-between">
-              <p class="p1">工单类型</p>
-              <p class="p2">缺陷填报工单</p>
-            </dd>
-            <dd class="flex-between">
-              <p class="p1">所属机组</p>
-              <p class="p2">#3机组</p>
-            </dd>
-            <dd class="flex-between">
-              <p class="p1">创建时间</p>
-              <p class="p2">2020-03-17 16:52:36</p>
-            </dd>
-          </dl>
-          <div class="item-r flex-column"> <span class="btns bgc-blue">待上报</span> </div>
-        </div>
-        
-      </li>
-      <li>
-        <a href="details-gd.html" title="">
-        <div class="item-tit flex-between">
-          <h2>#2给水泵密封漏水</h2>
-          <span><img src="images/ico-jt-more.png" width="22" height="36" alt=""/></span>
-        </div></a>
-        <div class="item-con flex-between">
-          <dl class="item-l">
-            <dd class="flex-between">
-              <p class="p1">工单编号</p>
-              <p class="p2">HZCS190811007</p>
-            </dd>
-            <dd class="flex-between">
-              <p class="p1">工单类型</p>
-              <p class="p2">缺陷填报工单</p>
-            </dd>
-            <dd class="flex-between">
-              <p class="p1">所属机组人</p>
-              <p class="p2">#2机组</p>
-            </dd>
-            <dd class="flex-between">
-              <p class="p1">创建时间</p>
-              <p class="p2">2020-03-17 16:52:36</p>
-            </dd>
-          </dl>
-          <div class="item-r flex-column">  <span class="btns bgc-green">待审核</span> </div>
-        </div>
-        
       </li>
     </ul>
   </div>
 </div>
-<div class="btmbar hide">
- <ul class="flex-row">
-<li> <a href="index.html" title=""> <img src="images/bar-ico1.png" width="42" height="42" alt=""/> <span>首页</span> </a> </li>
-    <li class="on"> <a href="list-gd.html" title=""> <img src="images/bar-ico2-on.png" width="42" height="42" alt=""/> <span>任务</span> </a> </li>
-    <li> <a href="message.html" title=""> <img src="images/bar-ico3.png" width="42" height="42" alt=""/> <span>消息</span> </a> </li>
-    <li> <a href="my.html" title=""> <img src="images/bar-ico4.png" width="42" height="42" alt=""/> <span>我的</span> </a> </li>
+<div class="black_overlay hide"></div>
+<div class="tc hide">
+  <ul class="qx-sh mt35">    
+    <li class="flex-between">
+      <div class="tc-l">审 &nbsp;&nbsp;&nbsp; 批</div>
+      <div class="tc-r">
+        <select>
+          <option value ="审批未通过">审批未通过</option>
+          <option value ="审批通过">审批通过</option>
+        </select>
+      </div>
+    </li>
+    <li class="flex-between">
+      <div class="tc-l">审 批 人</div>
+      <div class="tc-r">
+        <input type="text">
+      </div>
+    </li>
+    <li class="flex-between">
+      <div class="tc-l">处理意见</div>
+      <div class="tc-r">
+        <textarea></textarea>
+      </div>
+    </li>
   </ul>
+  <div class="flex-around"> <span class="btns bgc-grey">退回</span> <span class="btns bgc-blue">确认</span> </div>
 </div>
 <div class="select_box select_box3"></div>
 <div class="select_box select_box4"></div>
 <script src="js/select.js"></script>
+<script>
+$(function() {
+  $(".btns").click(function(){
+    $(".black_overlay").show();
+    $(".tc").show();
+  });
+  $(".tc .btns").click(function(){
+    $(".black_overlay").hide();
+    $(".tc").hide();
+  });
+})
+</script>
 </body>
 </html>

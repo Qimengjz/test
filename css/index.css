@@ -1,7 +1,7 @@
 @charset "utf-8";
 body { background: #fff }
 /* banner */
-.banner { padding-bottom: .1rem }
+.banner {margin-top:.88rem; padding-bottom: .1rem }
 .banner img { width: 100%; height: auto; }
 .banner:after { content: ""; display: block; width: 100%; border-bottom: 1px solid #ccc; box-shadow: 0 0 .15rem #000 }
 /* menu */

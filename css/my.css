@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* head */
-.my-top { height: 2.9rem; background: url(../images/my-topbg.jpg) no-repeat center 0; background-size: 100% 100% }
+.my-top { height: 2.9rem; margin-top: .88rem; background: url(../images/my-topbg.jpg) no-repeat center 0; background-size: 100% 100% }
 .my-top ul { padding-top: .1rem; color: #fff; text-align: center }
 .my-head { width: 1.2rem; height: 1.2rem; border: .03rem solid #fff; border-radius: 100%; background: #fff; box-shadow: 0 0 .1rem #ccc }
 .my-name { font-size: .3rem; font-weight: normal; line-height: .48rem }
